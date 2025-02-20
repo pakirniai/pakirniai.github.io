@@ -1,0 +1,60 @@
+/* Bendrieji stiliai */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.header, .footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Centruoti mygtukus */
+    gap: 10px; /* Tarpas tarp mygtukų */
+    margin-top: 20px;
+}
+
+.button-container a {
+    text-decoration: none; /* Pašalina nuorodos pabraukimą */
+}
+
+.button-container button {
+    padding: 10px 20px;
+    background-image: url('assets/images/1b.png'); /* Paveikslėlis kaip fonas */
+    background-size: cover; /* Padaro, kad paveikslėlis užimtų visą mygtuko plotą */
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px; /* Nustato mygtuko plotį */
+    height: 50px; /* Nustato mygtuko aukštį */
+    transition: background-image 0.3s ease; /* Lėtas perėjimas, kad pokytis būtų sklandus */
+}
+
+/* Kiekvienam mygtukui užvedus pelę, pakeičiame foną */
+.button-container button:hover {
+    background-image: url('assets/images/2b.png'); /* Paveikslėlis, kai užvedama pelė */
+}
+
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
