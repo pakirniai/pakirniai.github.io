@@ -15,32 +15,32 @@ body {
 
 .button-container {
     display: flex;
-    justify-content: center; /* Centruoti mygtukus */
-    gap: 10px; /* Tarpas tarp mygtukų */
+    justify-content: center;
+    gap: 10px;
     margin-top: 20px;
 }
 
 .button-container a {
-    text-decoration: none; /* Pašalina nuorodos pabraukimą */
+    text-decoration: none;
 }
 
 .button-container button {
     padding: 10px 20px;
-    background-image: url('assets/images/1b.png'); /* Paveikslėlis kaip fonas */
-    background-size: cover; /* Padaro, kad paveikslėlis užimtų visą mygtuko plotą */
+    background-image: url('assets/images/1b.png');
+    background-size: cover;
     color: black;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
-    width: 150px; /* Nustato mygtuko plotį */
-    height: 50px; /* Nustato mygtuko aukštį */
-    transition: background-image 0.3s ease; /* Lėtas perėjimas, kad pokytis būtų sklandus */
+    width: 150px;
+    height: 50px;
+    transition: background-image 0.3s ease, transform 0.2s ease;
 }
 
-/* Kiekvienam mygtukui užvedus pelę, pakeičiame foną */
 .button-container button:hover {
-    background-image: url('assets/images/2b.png'); /* Paveikslėlis, kai užvedama pelė */
+    background-image: url('assets/images/2b.png');
+    transform: scale(1.05); /* Slight scale-up effect */
 }
 
 .footer {
@@ -58,3 +58,16 @@ body {
     margin: 0;
     font-size: 14px;
 }
+
+.additional-text {
+   color: #000000;
+   font-family: Arial , sans-serif;
+   font-size: 15px;
+  }
+  
+  .content {
+   color:#000000 ;
+   font-family:Arial , sans-serif;
+   font-size:20px;
+
+  }
