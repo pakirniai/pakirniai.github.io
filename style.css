@@ -1,23 +1,41 @@
-/* Bendrieji stiliai */
+/* ====== GLOBAL STYLES ====== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 0;
+    color: #000;
+    line-height: 1.6;
+    padding-bottom: 60px; /* Prevent footer overlap */
 }
 
+/* ====== HEADER & FOOTER ====== */
 .header, .footer {
     background-color: #4CAF50;
     color: white;
     text-align: center;
-    padding: 10px;
+    padding: 15px;
 }
 
+.footer {
+    background-color: #333;
+    padding: 15px;
+    text-align: center;
+    width: 100%;
+    font-size: 14px;
+}
+
+/* ====== NAVIGATION BUTTONS ====== */
 .button-container {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
+    gap: 15px;
+    margin: 30px 0;
+    flex-wrap: wrap; /* Ensures responsiveness */
 }
 
 .button-container a {
@@ -25,49 +43,53 @@ body {
 }
 
 .button-container button {
-    padding: 10px 20px;
+    padding: 12px 25px;
     background-image: url('assets/images/1b.png');
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: black;
     border: none;
-    border-radius: 5px;
+    border-radius: 8px;
     cursor: pointer;
-    font-size: 16px;
-    width: 150px;
-    height: 50px;
-    transition: background-image 0.3s ease, transform 0.2s ease;
+    font-size: 18px;
+    font-weight: bold;
+    width: 160px;
+    height: 55px;
+    transition: background-image 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .button-container button:hover {
     background-image: url('assets/images/2b.png');
-    transform: scale(1.05); /* Slight scale-up effect */
+    transform: scale(1.07);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 10px;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-
-.footer p {
-    margin: 0;
-    font-size: 14px;
+/* ====== TEXT STYLES ====== */
+.additional-text, .content {
+    font-family: Arial, sans-serif;
+    color: #000;
 }
 
 .additional-text {
-   color: #000000;
-   font-family: Arial , sans-serif;
-   font-size: 15px;
-  }
-  
-  .content {
-   color:#000000 ;
-   font-family:Arial , sans-serif;
-   font-size:20px;
+    font-size: 16px;
+    font-weight: normal;
+}
 
-  }
+.content {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ====== RESPONSIVE DESIGN ====== */
+@media (max-width: 768px) {
+    .button-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .button-container button {
+        width: 100%;
+        max-width: 200px;
+    }
+}
