@@ -7,9 +7,27 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>https://pakirniai.lt/buy.html</loc>
+        <lastmod>2025-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://pakirniai.lt/about.html</loc>
+        <lastmod>2025-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://pakirniai.lt/services.html</loc>
+        <lastmod>2025-03-15</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
         <loc>https://pakirniai.lt/contacts.html</loc>
         <lastmod>2025-03-15</lastmod>
-        <changefreq>yearly</changefreq>
-        <priority>0.5</priority>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 </urlset>
