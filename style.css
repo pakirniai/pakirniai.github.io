@@ -107,7 +107,7 @@ footer a:hover {
     }
 
     .content {
-        font-family: "Dancing Script", cursive;
+        font-family: "CustomFont", cursive;
         font-weight: 500;
         font-size: 20px; /* Adjust font size for smaller screens */
         font-style: normal;
