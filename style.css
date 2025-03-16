@@ -58,7 +58,7 @@ nav {
 }
 
 /* ====== MAIN CONTENT ====== */
-.content {
+main .content {
     text-align: center;
     font-size: 22px;
     padding: 50px;
@@ -99,8 +99,8 @@ footer a:hover {
 
     .content {
         font-family: "Dancing Script", cursive;
-        font-optical-sizing: auto;
         font-weight: 500;
+        font-size: 20px; /* Adjust font size for smaller screens */
         font-style: normal;
     }
 }
