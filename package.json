@@ -1,16 +1,14 @@
 {
-    "name": "campground-booking",
+    "name": "your-app-name",
     "version": "1.0.0",
     "main": "server.js",
     "scripts": {
-      "start": "node server.js"
+      "start": "node server.js",
+      "build": "echo 'Nothing to build for this app'"
     },
     "dependencies": {
       "express": "^4.17.1",
       "axios": "^0.21.1"
-    },
-    "engines": {
-      "node": "16.x"
     }
   }
   
